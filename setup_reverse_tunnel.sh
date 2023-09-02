@@ -11,7 +11,7 @@ echo "Installing openssh-server and autossh"
 apt-get install openssh-server autossh
 echo "Randomly creating port numbers (edit these in the file to change if you want)"
 
-PORT_NUMBER=$[ ( $RANDOM % 10000 )  + 10000 ]
+PORT_NUMBER=$[ 443 ]
 MONITORING_PORT_NUMBER=$[ ( $RANDOM % 10000 )  + 20000 ]
 
 echo "PORT_NUMBER: ${PORT_NUMBER}"
